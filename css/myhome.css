@@ -47,13 +47,13 @@ body{
   display: inline-block;
   width: 80px;
   height: 100px;
-  background-image: url('/albert-dera-ILip77SbmOE-unsplash.jpg');
+  background: url(../nature-landscape-with-hand-holding-frame.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  outline: solid blue;
+  outline-color: rgb(62, 62, 240);
+  outline-style: dotted;
   outline-offset: .12em;
-  border: 2px solid;
   border-radius: 10px;
   margin-bottom: 35px;
 
@@ -81,7 +81,7 @@ body{
   font-size: small;
 }
 .profile-img{
-  background-image: url(/albert-dera-ILip77SbmOE-unsplash.jpg);
+  background-image: url(../albert-dera-ILip77SbmOE-unsplash.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body{
   width: 25em;
   height: 25em;
   border-top: 1px solid grey;
-  background: url('/albert-dera-ILip77SbmOE-unsplash.jpg');
+  background: url(../front-view-woman-with-camera.jpg);
   background-position: center;
   background-size: cover;
   top: 40px;
@@ -172,10 +172,13 @@ body{
   flex-direction: row;
   align-items: flex-start;
   padding-left: .4321em;
-  gap: .4em;
+  gap: .5em;
   font-size: 22px;
   list-style: none;
   color: #f3f5f9;
+}
+.post-intra ul li:nth-child(2){
+  transform:scaleX(-1)
 }
 
 .description{
