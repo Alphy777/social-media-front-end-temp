@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background: black !important;
+}
+.sidebar{
+  border-right: 2px solid rgba(128, 128, 128, 0.575);
+  color: #f3f5f9;
+  background: black;
+  position: fixed;
+  width: 13em;
+  height: 100%;
+
+}
+.sidebar h2{
+  margin: .93em 0;
+  text-align: center;
+}
+.sidebar ul li{
+  list-style: none ;
+  padding: .623em;
+}
+.sidebar ul span li {
+  font-size: 1.5em;
+  padding: 0.0000em;
+}
+.sidebar a{
+  text-decoration: none;
+  color: #f3f5f9cb;
+}
+
+/*******************profile section*******************/
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    color: #f3f5f9cb;
+    padding: 3em;
+
+    margin: auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-left: 6em;
+    margin-bottom: 2em;
+    gap: 5em;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #f3f5f9cb;
+    margin-right: 2em;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #f3f5f9;
+}
+
+.profile-details p {
+    margin: .5em 0;
+}
+
+.profile-details a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.profile-stats {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-top: 1em;
+}
+
+.profile-stats li {
+    margin-right: 1.5em;
+}
+
+.profile-stats span {
+    font-weight: bold;
+    color: #f3f5f9;
+}
+
+/*******************tab section*******************/
+.tabs-section {
+
+    margin-top: 20px;
+}
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.tabs li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tabs li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs li.active a,
+.tabs li a:hover {
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+}
+
+/*************controlling tabs section**************/
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.tabs-section .tabs {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-left: 0;
+}
+
+.tabs-section .tabs li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs-section .tabs li.active {
+    border-bottom: 2px solid #000; /* Highlight the active tab */
+}
+
+.posts-section,
+.reel-section,
+.saved-section,
+.tagged-section {
+    display: none; /* Hide all sections by default */
+}
+
+.posts-section.active,
+.reel-section.active,
+.saved-section.active,
+.tagged-section.active {
+    display: block; /* Show the active section */
+}
+
+/*******************post section*******************/
+
+
+.posts-section {
+    margin-top: 2em;
+
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    list-style: none;
+
+}
+
+.posts-grid li {
+    position: relative;
+}
+.posts-grid{
+    padding-left: 1rem !important;
+}
+
+.posts-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}

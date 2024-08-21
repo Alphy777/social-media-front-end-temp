@@ -27,6 +27,10 @@ body{
   list-style: none ;
   padding: .623em;
 }
+.sidebar ul span li {
+  font-size: 1.5em;
+  padding: 0.0000em;
+}
 .sidebar a{
   text-decoration: none;
   color: #f3f5f9cb;
@@ -47,7 +51,7 @@ body{
   display: inline-block;
   width: 80px;
   height: 100px;
-  background: url(../nature-landscape-with-hand-holding-frame.jpg);
+  background: url(../images/nature-landscape-with-hand-holding-frame.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,7 +85,7 @@ body{
   font-size: small;
 }
 .profile-img{
-  background-image: url(../albert-dera-ILip77SbmOE-unsplash.jpg);
+  background-image: url(../images/albert-dera-ILip77SbmOE-unsplash.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +159,7 @@ body{
   width: 25em;
   height: 25em;
   border-top: 1px solid grey;
-  background: url(../front-view-woman-with-camera.jpg);
+  background: url(../images/front-view-woman-with-camera.jpg);
   background-position: center;
   background-size: cover;
   top: 40px;
